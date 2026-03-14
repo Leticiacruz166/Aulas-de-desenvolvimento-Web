@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>fORMULÁRIO</title>
+</head>
+<body>
+    <div>
+        <h1>CADASTRO DE ALUNO</h1>
+    
+
+    <form class="form" action="/enviar-dados" method="POST">
+        FORMULÁRIO DE CADASTRO DE ALUNO
+
+        <label FOR="Nome">Nome:</label>
+        <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="SEXO">Feminino</label>
+        <input type="radio" id="SEXO" name="SEXO" value="Feminino" checked>
+        
+        <label for="SEXO">Masculino</label>
+        <input type="radio" id="SEXO" name="SEXO" value="masculino" checked>
+        
+        <form class="form" action="/enviar-dados" method="POST">
+            Possui algum tipo de deficiência?
+        <label for="Sim">Sim</label><br>
+        <input type="checkbox" id="html" name="habilidade" value="Sim">
+        
+        
+        <label for="Não">Não</label><br> 
+        <input type="checkbox" id="css" name="habilidade" value="Não">
+        </form>
+
+        <form class="form" action="/enviar-dados" method="POST">
+            <form>
+                <label for="pais">Selecione seu país:</label>
+                    <select id="pais" name="pais">
+                        <option value="br">Brasil</option>
+                        <option value="pt">Portugal</option>
+                        <option value="us">EUA</option>
+                    </select>
+            </form>
+        </form>
+
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+</body>
+</html>
